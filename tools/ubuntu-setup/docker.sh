@@ -43,3 +43,5 @@ sudo -E bash -c 'echo '\''DOCKER_OPTS="-H unix:///var/run/docker.sock --storage-
 sudo gpasswd -a "$(whoami)" docker
 
 sudo service docker restart
+
+sudo chmod 666 /var/run/docker.sock

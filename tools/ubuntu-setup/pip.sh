@@ -19,6 +19,7 @@
 set -e
 set -x
 
-sudo apt-get install -y python-pip
+sudo apt-get install -y python3-pip
+pip install markupsafe==2.0.1
 sudo pip install argcomplete
 sudo pip install couchdb
