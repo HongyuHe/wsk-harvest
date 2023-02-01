@@ -23,3 +23,7 @@ sudo apt-get install -y python3-pip
 pip install markupsafe==2.0.1
 sudo pip install argcomplete
 sudo pip install couchdb
+pip install pip --upgrade
+pip install pyopenssl --upgrade
+pip install -U ansible # We need > 2.12.4
+PATH=$PATH:/opt/couchbase/bin/
