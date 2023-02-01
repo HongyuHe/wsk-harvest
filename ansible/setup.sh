@@ -1,7 +1,16 @@
-export ENVIRONMENT=local
+#!/usr/bin/env bash
 
+(cd tools/ubuntu-setup && ./all.sh)
+# Just to be sure
+sudo chmod 666 /var/run/docker.sock
+
+# Build
+./gradlew distDocker
+
+cd ansible || exit
+export ENVIRONMENT=local
 export OW_DB=CouchDB
-export OW_DB_USERNAME=hy
+export OW_DB_USERNAME=admin
 export OW_DB_PASSWORD=123123
 export OW_DB_PROTOCOL=http
 export OW_DB_HOST=127.0.0.1
@@ -15,7 +24,8 @@ ansible-playbook -i environments/$ENVIRONMENT  couchdb.yml
 ansible-playbook -i environments/$ENVIRONMENT  initdb.yml
 ansible-playbook -i environments/$ENVIRONMENT  wipe.yml
 ansible-playbook -i environments/$ENVIRONMENT  apigateway.yml
-sudo ansible-playbook -i environments/$ENVIRONMENT  openwhisk.yml
+
+ansible-playbook -i environments/$ENVIRONMENT  openwhisk.yml
 ansible-playbook -i environments/$ENVIRONMENT  postdeploy.yml
 
 
