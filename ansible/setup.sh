@@ -4,17 +4,22 @@
 # Just to be sure
 sudo chmod 666 /var/run/docker.sock
 
+# Pull up the default python for ansible to work properly
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.8 2
+
 # Build
 ./gradlew distDocker
 
 cd ansible || exit
 export ENVIRONMENT=local
-export OW_DB=CouchDB
-export OW_DB_USERNAME=admin
-export OW_DB_PASSWORD=123123
-export OW_DB_PROTOCOL=http
-export OW_DB_HOST=127.0.0.1
-export OW_DB_PORT=8091
+
+# * Use the generated default setting.
+#export OW_DB=CouchDB
+#export OW_DB_USERNAME=admin
+#export OW_DB_PASSWORD=123123
+#export OW_DB_PROTOCOL=http
+#export OW_DB_HOST=127.0.0.1
+#export OW_DB_PORT=8091
 
 # Run an old-version couchdb as a container.
 ansible-playbook -i environments/$ENVIRONMENT setup.yml
@@ -23,9 +28,10 @@ ansible-playbook -i environments/$ENVIRONMENT prereq.yml
 ansible-playbook -i environments/$ENVIRONMENT  couchdb.yml
 ansible-playbook -i environments/$ENVIRONMENT  initdb.yml
 ansible-playbook -i environments/$ENVIRONMENT  wipe.yml
-ansible-playbook -i environments/$ENVIRONMENT  apigateway.yml
 
 ansible-playbook -i environments/$ENVIRONMENT  openwhisk.yml
+
+ansible-playbook -i environments/$ENVIRONMENT  apigateway.yml
 ansible-playbook -i environments/$ENVIRONMENT  postdeploy.yml
 
 
