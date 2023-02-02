@@ -26,8 +26,8 @@ sudo apt-get update
 sudo apt-get install -y python-dev libffi-dev libssl-dev
 sudo pip install markupsafe
 
-#sudo pip install ansible==6.7.0
-pip install -U ansible # We need > 2.12.4
+sudo pip install ansible==3.0.0
+#pip install -U ansible # We need > 2.12.4
 echo 'PATH=$PATH:~/.local/bin/' >> ~/.profile
 source "$HOME/.profile"
 
