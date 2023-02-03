@@ -20,6 +20,10 @@
 - hosts: localhost
   tasks:
   # Generate hosts files
+  - name: gen hosts if 'cloudlab' env is used
+    local_action: template src="{{playbook_dir}}/environments/cloudlab/hosts.j2.ini" dest="{{ playbook_dir }}/environments/cloudlab/hosts"
+    when: "'environments/cloudlab' in hosts_dir"
+
   - name: gen hosts if 'local' env is used
     local_action: template src="{{playbook_dir}}/environments/local/hosts.j2.ini" dest="{{ playbook_dir }}/environments/local/hosts"
     when: "'environments/local' in hosts_dir"
