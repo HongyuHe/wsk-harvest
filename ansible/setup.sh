@@ -3,8 +3,10 @@
 ENV=$1
 
 (cd tools/ubuntu-setup && ./all.sh)
+
 # Just to be sure
 sudo chmod 666 /var/run/docker.sock
+
 
 # Pull up the default python for ansible to work properly
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.8 2
@@ -20,7 +22,7 @@ export ENVIRONMENT=$ENV
 #export OW_DB_USERNAME=admin
 #export OW_DB_PASSWORD=123123
 #export OW_DB_PROTOCOL=http
-#export OW_DB_HOST=127.0.0.1
+export OW_DB_HOST=10.0.1.1
 #export OW_DB_PORT=8091
 
 # Run couchdb as a container.
