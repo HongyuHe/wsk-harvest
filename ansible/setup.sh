@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+ENV=$1
+
 (cd tools/ubuntu-setup && ./all.sh)
 # Just to be sure
 sudo chmod 666 /var/run/docker.sock
@@ -11,7 +13,7 @@ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.8 2
 ./gradlew distDocker
 
 cd ansible || exit
-export ENVIRONMENT=local
+export ENVIRONMENT=$ENV
 
 # * Use the generated default setting.
 #export OW_DB=CouchDB
@@ -22,17 +24,17 @@ export ENVIRONMENT=local
 #export OW_DB_PORT=8091
 
 # Run couchdb as a container.
-ansible-playbook -i environments/$ENVIRONMENT setup.yml
-ansible-playbook -i environments/$ENVIRONMENT prereq.yml
+ansible-playbook -i environments/"$ENVIRONMENT" setup.yml
+ansible-playbook -i environments/"$ENVIRONMENT" prereq.yml
 
-ansible-playbook -i environments/$ENVIRONMENT  couchdb.yml
-ansible-playbook -i environments/$ENVIRONMENT  initdb.yml
-ansible-playbook -i environments/$ENVIRONMENT  wipe.yml
+ansible-playbook -i environments/"$ENVIRONMENT"  couchdb.yml
+ansible-playbook -i environments/"$ENVIRONMENT"  initdb.yml
+ansible-playbook -i environments/"$ENVIRONMENT"  wipe.yml
 
-ansible-playbook -i environments/$ENVIRONMENT  openwhisk.yml
+ansible-playbook -i environments/"$ENVIRONMENT"  openwhisk.yml
 
-ansible-playbook -i environments/$ENVIRONMENT  apigateway.yml
-ansible-playbook -i environments/$ENVIRONMENT  postdeploy.yml
+ansible-playbook -i environments/"$ENVIRONMENT"  apigateway.yml
+ansible-playbook -i environments/"$ENVIRONMENT"  postdeploy.yml
 
 cd ..
 ./bin/wsk property set --apihost 172.17.0.1 --auth 23bc46b1-71f6-4ed5-8c54-816aa4f8c502:123zO3xZCLrMN6v2BKK1dXYFpXlPkccOFqm12CdAsMgRU4VrNZ9lyGVCGuMDGIwP
