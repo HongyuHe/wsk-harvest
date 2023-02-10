@@ -1,0 +1,736 @@
+{
+    "composition": {
+        "type": "sequence",
+        "components": [
+            {
+                "type": "action",
+                "name": "/_/seq0",
+                "path": "[0]"
+            },
+            {
+                "type": "action",
+                "name": "/_/seq1",
+                "path": "[1]"
+            },
+            {
+                "type": "action",
+                "name": "/_/seq2",
+                "path": "[2]"
+            },
+            {
+                "type": "action",
+                "name": "/_/seq3",
+                "path": "[3]"
+            },
+            {
+                "type": "action",
+                "name": "/_/seq4",
+                "path": "[4]"
+            },
+            {
+                "type": "action",
+                "name": "/_/seq5",
+                "path": "[5]"
+            },
+            {
+                "type": "action",
+                "name": "/_/seq6",
+                "path": "[6]"
+            },
+            {
+                "type": "action",
+                "name": "/_/seq7",
+                "path": "[7]"
+            },
+            {
+                "type": "action",
+                "name": "/_/seq8",
+                "path": "[8]"
+            },
+            {
+                "type": "action",
+                "name": "/_/seq9",
+                "path": "[9]"
+            },
+            {
+                "type": "action",
+                "name": "/_/seq10",
+                "path": "[10]"
+            },
+            {
+                "type": "action",
+                "name": "/_/seq11",
+                "path": "[11]"
+            },
+            {
+                "type": "action",
+                "name": "/_/seq12",
+                "path": "[12]"
+            },
+            {
+                "type": "action",
+                "name": "/_/seq13",
+                "path": "[13]"
+            },
+            {
+                "type": "action",
+                "name": "/_/seq14",
+                "path": "[14]"
+            },
+            {
+                "type": "action",
+                "name": "/_/seq15",
+                "path": "[15]"
+            },
+            {
+                "type": "action",
+                "name": "/_/seq16",
+                "path": "[16]"
+            },
+            {
+                "type": "action",
+                "name": "/_/seq17",
+                "path": "[17]"
+            },
+            {
+                "type": "action",
+                "name": "/_/seq18",
+                "path": "[18]"
+            },
+            {
+                "type": "action",
+                "name": "/_/seq19",
+                "path": "[19]"
+            },
+            {
+                "type": "action",
+                "name": "/_/seq20",
+                "path": "[20]"
+            },
+            {
+                "type": "action",
+                "name": "/_/seq21",
+                "path": "[21]"
+            },
+            {
+                "type": "action",
+                "name": "/_/seq22",
+                "path": "[22]"
+            },
+            {
+                "type": "action",
+                "name": "/_/seq23",
+                "path": "[23]"
+            },
+            {
+                "type": "action",
+                "name": "/_/seq24",
+                "path": "[24]"
+            },
+            {
+                "type": "action",
+                "name": "/_/seq25",
+                "path": "[25]"
+            },
+            {
+                "type": "action",
+                "name": "/_/seq26",
+                "path": "[26]"
+            },
+            {
+                "type": "action",
+                "name": "/_/seq27",
+                "path": "[27]"
+            },
+            {
+                "type": "action",
+                "name": "/_/seq28",
+                "path": "[28]"
+            },
+            {
+                "type": "action",
+                "name": "/_/seq29",
+                "path": "[29]"
+            }
+        ],
+        "path": ""
+    },
+    "ast": {
+        "type": "seq",
+        "components": [
+            {
+                "type": "action",
+                "name": "/_/seq0",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function () {return { msg: 'seq0 invoked' }}"
+                    }
+                }
+            },
+            {
+                "type": "action",
+                "name": "/_/seq1",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function () {return { msg: 'seq1 invoked' }}"
+                    }
+                }
+            },
+            {
+                "type": "action",
+                "name": "/_/seq2",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function () {return { msg: 'seq2 invoked' }}"
+                    }
+                }
+            },
+            {
+                "type": "action",
+                "name": "/_/seq3",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function () {return { msg: 'seq3 invoked' }}"
+                    }
+                }
+            },
+            {
+                "type": "action",
+                "name": "/_/seq4",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function () {return { msg: 'seq4 invoked' }}"
+                    }
+                }
+            },
+            {
+                "type": "action",
+                "name": "/_/seq5",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function () {return { msg: 'seq5 invoked' }}"
+                    }
+                }
+            },
+            {
+                "type": "action",
+                "name": "/_/seq6",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function () {return { msg: 'seq6 invoked' }}"
+                    }
+                }
+            },
+            {
+                "type": "action",
+                "name": "/_/seq7",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function () {return { msg: 'seq7 invoked' }}"
+                    }
+                }
+            },
+            {
+                "type": "action",
+                "name": "/_/seq8",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function () {return { msg: 'seq8 invoked' }}"
+                    }
+                }
+            },
+            {
+                "type": "action",
+                "name": "/_/seq9",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function () {return { msg: 'seq9 invoked' }}"
+                    }
+                }
+            },
+            {
+                "type": "action",
+                "name": "/_/seq10",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function () {return { msg: 'seq10 invoked' }}"
+                    }
+                }
+            },
+            {
+                "type": "action",
+                "name": "/_/seq11",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function () {return { msg: 'seq11 invoked' }}"
+                    }
+                }
+            },
+            {
+                "type": "action",
+                "name": "/_/seq12",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function () {return { msg: 'seq12 invoked' }}"
+                    }
+                }
+            },
+            {
+                "type": "action",
+                "name": "/_/seq13",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function () {return { msg: 'seq13 invoked' }}"
+                    }
+                }
+            },
+            {
+                "type": "action",
+                "name": "/_/seq14",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function () {return { msg: 'seq14 invoked' }}"
+                    }
+                }
+            },
+            {
+                "type": "action",
+                "name": "/_/seq15",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function () {return { msg: 'seq15 invoked' }}"
+                    }
+                }
+            },
+            {
+                "type": "action",
+                "name": "/_/seq16",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function () {return { msg: 'seq16 invoked' }}"
+                    }
+                }
+            },
+            {
+                "type": "action",
+                "name": "/_/seq17",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function () {return { msg: 'seq17 invoked' }}"
+                    }
+                }
+            },
+            {
+                "type": "action",
+                "name": "/_/seq18",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function () {return { msg: 'seq18 invoked' }}"
+                    }
+                }
+            },
+            {
+                "type": "action",
+                "name": "/_/seq19",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function () {return { msg: 'seq19 invoked' }}"
+                    }
+                }
+            },
+            {
+                "type": "action",
+                "name": "/_/seq20",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function () {return { msg: 'seq20 invoked' }}"
+                    }
+                }
+            },
+            {
+                "type": "action",
+                "name": "/_/seq21",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function () {return { msg: 'seq21 invoked' }}"
+                    }
+                }
+            },
+            {
+                "type": "action",
+                "name": "/_/seq22",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function () {return { msg: 'seq22 invoked' }}"
+                    }
+                }
+            },
+            {
+                "type": "action",
+                "name": "/_/seq23",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function () {return { msg: 'seq23 invoked' }}"
+                    }
+                }
+            },
+            {
+                "type": "action",
+                "name": "/_/seq24",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function () {return { msg: 'seq24 invoked' }}"
+                    }
+                }
+            },
+            {
+                "type": "action",
+                "name": "/_/seq25",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function () {return { msg: 'seq25 invoked' }}"
+                    }
+                }
+            },
+            {
+                "type": "action",
+                "name": "/_/seq26",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function () {return { msg: 'seq26 invoked' }}"
+                    }
+                }
+            },
+            {
+                "type": "action",
+                "name": "/_/seq27",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function () {return { msg: 'seq27 invoked' }}"
+                    }
+                }
+            },
+            {
+                "type": "action",
+                "name": "/_/seq28",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function () {return { msg: 'seq28 invoked' }}"
+                    }
+                }
+            },
+            {
+                "type": "action",
+                "name": "/_/seq29",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function () {return { msg: 'seq29 invoked' }}"
+                    }
+                }
+            }
+        ]
+    },
+    "version": "0.12.0",
+    "actions": [
+        {
+            "name": "/_/seq0",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function () {return { msg: 'seq0 invoked' }}"
+                }
+            }
+        },
+        {
+            "name": "/_/seq1",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function () {return { msg: 'seq1 invoked' }}"
+                }
+            }
+        },
+        {
+            "name": "/_/seq2",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function () {return { msg: 'seq2 invoked' }}"
+                }
+            }
+        },
+        {
+            "name": "/_/seq3",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function () {return { msg: 'seq3 invoked' }}"
+                }
+            }
+        },
+        {
+            "name": "/_/seq4",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function () {return { msg: 'seq4 invoked' }}"
+                }
+            }
+        },
+        {
+            "name": "/_/seq5",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function () {return { msg: 'seq5 invoked' }}"
+                }
+            }
+        },
+        {
+            "name": "/_/seq6",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function () {return { msg: 'seq6 invoked' }}"
+                }
+            }
+        },
+        {
+            "name": "/_/seq7",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function () {return { msg: 'seq7 invoked' }}"
+                }
+            }
+        },
+        {
+            "name": "/_/seq8",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function () {return { msg: 'seq8 invoked' }}"
+                }
+            }
+        },
+        {
+            "name": "/_/seq9",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function () {return { msg: 'seq9 invoked' }}"
+                }
+            }
+        },
+        {
+            "name": "/_/seq10",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function () {return { msg: 'seq10 invoked' }}"
+                }
+            }
+        },
+        {
+            "name": "/_/seq11",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function () {return { msg: 'seq11 invoked' }}"
+                }
+            }
+        },
+        {
+            "name": "/_/seq12",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function () {return { msg: 'seq12 invoked' }}"
+                }
+            }
+        },
+        {
+            "name": "/_/seq13",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function () {return { msg: 'seq13 invoked' }}"
+                }
+            }
+        },
+        {
+            "name": "/_/seq14",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function () {return { msg: 'seq14 invoked' }}"
+                }
+            }
+        },
+        {
+            "name": "/_/seq15",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function () {return { msg: 'seq15 invoked' }}"
+                }
+            }
+        },
+        {
+            "name": "/_/seq16",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function () {return { msg: 'seq16 invoked' }}"
+                }
+            }
+        },
+        {
+            "name": "/_/seq17",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function () {return { msg: 'seq17 invoked' }}"
+                }
+            }
+        },
+        {
+            "name": "/_/seq18",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function () {return { msg: 'seq18 invoked' }}"
+                }
+            }
+        },
+        {
+            "name": "/_/seq19",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function () {return { msg: 'seq19 invoked' }}"
+                }
+            }
+        },
+        {
+            "name": "/_/seq20",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function () {return { msg: 'seq20 invoked' }}"
+                }
+            }
+        },
+        {
+            "name": "/_/seq21",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function () {return { msg: 'seq21 invoked' }}"
+                }
+            }
+        },
+        {
+            "name": "/_/seq22",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function () {return { msg: 'seq22 invoked' }}"
+                }
+            }
+        },
+        {
+            "name": "/_/seq23",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function () {return { msg: 'seq23 invoked' }}"
+                }
+            }
+        },
+        {
+            "name": "/_/seq24",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function () {return { msg: 'seq24 invoked' }}"
+                }
+            }
+        },
+        {
+            "name": "/_/seq25",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function () {return { msg: 'seq25 invoked' }}"
+                }
+            }
+        },
+        {
+            "name": "/_/seq26",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function () {return { msg: 'seq26 invoked' }}"
+                }
+            }
+        },
+        {
+            "name": "/_/seq27",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function () {return { msg: 'seq27 invoked' }}"
+                }
+            }
+        },
+        {
+            "name": "/_/seq28",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function () {return { msg: 'seq28 invoked' }}"
+                }
+            }
+        },
+        {
+            "name": "/_/seq29",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function () {return { msg: 'seq29 invoked' }}"
+                }
+            }
+        }
+    ]
+}

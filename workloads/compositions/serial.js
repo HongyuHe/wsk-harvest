@@ -1,15 +1,14 @@
 const composer = require('openwhisk-composer')
 
-module.exports = composer.while(
-    composer.action('check-depth', {
-        action: function(params) {
-            let depth = parseInt(params.depth)
-            return {value: depth > 0, depth: depth}
+module.exports = composer.seq(
+    composer.action('seq1', {
+        action: function () {
+            return { msg: 'seq1 invoked' }
         }
     }),
-    composer.action('serial-loop', {
-        action: function(params) {
-            return {depth: --params.depth}
+    composer.action('seq2', {
+        action: function () {
+            return { msg: 'seq2 invoked' }
         }
-    })
+    }),
 )

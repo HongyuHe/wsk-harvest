@@ -1,0 +1,59 @@
+[Trace 11:38:00.354] VsCodeClientWorkspace: TextDocument.onDidOpen: file:///users/hy/openwhisk-catalog/README.md
+[Trace 11:38:00.356] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///users/hy/openwhisk-catalog/README.md
+[Trace 11:38:00.358] Server: connection.languages.diagnostics.on: file:///users/hy/openwhisk-catalog/README.md
+[Trace 11:38:00.358] Server: connection.languages.diagnostics.on: file:///users/hy/wsk-harvest/docs/spi.md
+[Trace 11:38:00.360] Server: connection.languages.diagnostics.on: file:///users/hy/openwhisk-catalog/README.md
+[Trace 11:38:00.563] Server: connection.languages.diagnostics.on: file:///users/hy/wsk-harvest/docs/spi.md
+[Trace 11:38:00.644] DocumentSymbolProvider: provideDocumentSymbols — file:///users/hy/openwhisk-catalog/README.md 1
+[Debug 11:38:00.644] LinkProvider: compute - file:///users/hy/openwhisk-catalog/README.md
+[Debug 11:38:00.830] MdFoldingProvider: provideFoldingRanges — file:///users/hy/openwhisk-catalog/README.md 1
+[Debug 11:38:00.831] TableOfContentsProvider: create - file:///users/hy/openwhisk-catalog/README.md
+[Trace 11:38:04.905] Server: connection.languages.diagnostics.on: file:///users/hy/wsk-harvest/docs/spi.md
+[Trace 11:38:05.105] Server: connection.languages.diagnostics.on: file:///users/hy/openwhisk-catalog/README.md
+[Trace 11:38:37.835] Server: connection.languages.diagnostics.on: file:///users/hy/openwhisk-catalog/README.md
+[Trace 11:38:39.464] VsCodeClientWorkspace: TextDocument.onDidClose: file:///users/hy/openwhisk-catalog/README.md
+[Trace 11:38:39.464] VsCodeClientWorkspace: deleteDocument: file:///users/hy/openwhisk-catalog/README.md
+[Trace 11:47:26.780] Server: connection.languages.diagnostics.on: file:///users/hy/wsk-harvest/docs/spi.md
+[Trace 11:53:29.086] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///users/hy/wsk-harvest/workloads/functions/autocomplete/README.md
+[Trace 11:53:29.086] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///users/hy/wsk-harvest/workloads/functions/img-resize/README.md
+[Trace 11:53:29.086] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///users/hy/wsk-harvest/workloads/functions/markdown-to-html/README.md
+[Trace 11:53:29.087] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///users/hy/wsk-harvest/workloads/functions/markdown-to-html/openpiton-readme.md
+[Trace 11:53:29.087] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///users/hy/wsk-harvest/workloads/functions/microbenchmarks/README.md
+[Trace 11:53:29.088] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///users/hy/wsk-harvest/workloads/functions/ocr-img/README.md
+[Trace 11:53:29.088] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///users/hy/wsk-harvest/workloads/functions/sentiment-analysis/README.md
+[Trace 11:53:29.088] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///users/hy/wsk-harvest/workloads/functions/autocomplete/README.md
+[Trace 11:53:29.088] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///users/hy/wsk-harvest/workloads/functions/img-resize/README.md
+[Trace 11:53:29.376] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///users/hy/wsk-harvest/workloads/functions/chameleon/docker/CHANGELOG.md
+[Trace 11:53:29.376] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///users/hy/wsk-harvest/workloads/functions/microbenchmarks/base64/README.md
+[Trace 11:53:29.376] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///users/hy/wsk-harvest/workloads/functions/microbenchmarks/http-endpoint/README.md
+[Trace 11:53:29.377] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///users/hy/wsk-harvest/workloads/functions/microbenchmarks/json/README.md
+[Trace 11:53:29.377] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///users/hy/wsk-harvest/workloads/functions/microbenchmarks/primes/README.md
+[Trace 11:53:29.377] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///users/hy/wsk-harvest/workloads/functions/pyaes/docker/CHANGELOG.md
+[Trace 11:53:29.377] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///users/hy/wsk-harvest/workloads/functions/video_processing/docker/CHANGELOG.md
+[Trace 11:53:29.377] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///users/hy/wsk-harvest/workloads/functions/markdown-to-html/README.md
+[Trace 11:53:29.378] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///users/hy/wsk-harvest/workloads/functions/markdown-to-html/openpiton-readme.md
+[Trace 11:53:29.378] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///users/hy/wsk-harvest/workloads/functions/microbenchmarks/README.md
+[Trace 11:53:29.378] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///users/hy/wsk-harvest/workloads/functions/ocr-img/README.md
+[Trace 11:53:29.378] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///users/hy/wsk-harvest/workloads/functions/sentiment-analysis/README.md
+[Trace 11:53:29.837] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///users/hy/wsk-harvest/workloads/functions/chameleon/docker/CHANGELOG.md
+[Trace 11:53:29.837] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///users/hy/wsk-harvest/workloads/functions/microbenchmarks/base64/README.md
+[Trace 11:53:29.837] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///users/hy/wsk-harvest/workloads/functions/microbenchmarks/http-endpoint/README.md
+[Trace 11:53:29.837] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///users/hy/wsk-harvest/workloads/functions/microbenchmarks/json/README.md
+[Trace 11:53:29.837] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///users/hy/wsk-harvest/workloads/functions/microbenchmarks/primes/README.md
+[Trace 11:53:29.837] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///users/hy/wsk-harvest/workloads/functions/ml_inference/logistic_regression_review/docker/CHANGELOG.md
+[Trace 11:53:29.837] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///users/hy/wsk-harvest/workloads/functions/ml_inference/mobilenet/docker/CHANGELOG.md
+[Trace 11:53:29.838] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///users/hy/wsk-harvest/workloads/functions/pyaes/docker/CHANGELOG.md
+[Trace 11:53:29.838] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///users/hy/wsk-harvest/workloads/functions/video_processing/docker/CHANGELOG.md
+[Trace 11:53:30.768] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///users/hy/wsk-harvest/workloads/functions/ml_inference/logistic_regression_review/docker/CHANGELOG.md
+[Trace 11:53:30.768] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///users/hy/wsk-harvest/workloads/functions/ml_inference/mobilenet/docker/CHANGELOG.md
+[Trace 11:55:06.735] Server: connection.languages.diagnostics.on: file:///users/hy/openwhisk-catalog/README.md
+[Trace 11:55:06.921] VsCodeClientWorkspace: TextDocument.onDidOpen: file:///users/hy/openwhisk-catalog/README.md
+[Trace 11:55:06.921] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///users/hy/openwhisk-catalog/README.md
+[Trace 11:55:06.923] Server: connection.languages.diagnostics.on: file:///users/hy/openwhisk-catalog/README.md
+[Trace 11:55:06.923] DocumentSymbolProvider: provideDocumentSymbols — file:///users/hy/openwhisk-catalog/README.md 1
+[Debug 11:55:06.923] LinkProvider: compute - file:///users/hy/openwhisk-catalog/README.md
+[Trace 11:55:06.926] Server: connection.languages.diagnostics.on: file:///users/hy/openwhisk-catalog/README.md
+[Debug 11:55:06.934] TableOfContentsProvider: create - file:///users/hy/openwhisk-catalog/README.md
+[Debug 11:55:07.100] MdFoldingProvider: provideFoldingRanges — file:///users/hy/openwhisk-catalog/README.md 1
+[Trace 11:55:11.426] VsCodeClientWorkspace: TextDocument.onDidClose: file:///users/hy/openwhisk-catalog/README.md
+[Trace 11:55:11.426] VsCodeClientWorkspace: deleteDocument: file:///users/hy/openwhisk-catalog/README.md

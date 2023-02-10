@@ -1,0 +1,56 @@
+2023-02-10 04:29:53.179 [info] 
+
+
+
+
+2023-02-10 04:29:53.209 [info] Extension host agent started.
+2023-02-10 04:29:53.255 [info] Migrating extensions from old default profile location file:///users/hy/.vscode-server/data/User/extensions.json
+2023-02-10 04:29:53.712 [info] [127.0.0.1][2e01f525][ManagementConnection] New connection established.
+2023-02-10 04:29:54.069 [info] [127.0.0.1][e4539cde][ExtensionHostConnection] New connection established.
+2023-02-10 04:29:54.075 [info] [127.0.0.1][e4539cde][ExtensionHostConnection] <1848589> Launched Extension Host Process.
+2023-02-10 04:29:55.301 [info] Migrated extensions from old default profile location to new location file:///users/hy/.vscode-server/data/User/extensions.json file:///users/hy/.vscode-server/extensions/extensions.json
+2023-02-10 04:29:59.325 [info] [127.0.0.1][2e01f525][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2023-02-10 04:29:59.347 [info] [127.0.0.1][e4539cde][ExtensionHostConnection] <1848589> Extension Host Process exited with code: 0, signal: null.
+2023-02-10 04:29:59.348 [info] Cancelling previous shutdown timeout
+2023-02-10 04:29:59.348 [info] Last EH closed, waiting before shutting down
+2023-02-10 04:30:02.926 [info] Got delay-shutdown request while in shutdown timeout, delaying
+2023-02-10 04:30:02.926 [info] Cancelling previous shutdown timeout
+2023-02-10 04:30:03.620 [info] [127.0.0.1][8b97ef6d][ManagementConnection] New connection established.
+2023-02-10 04:30:03.950 [info] [127.0.0.1][21213f0e][ExtensionHostConnection] New connection established.
+2023-02-10 04:30:03.957 [info] [127.0.0.1][21213f0e][ExtensionHostConnection] <1848738> Launched Extension Host Process.
+2023-02-10 04:35:02.927 [info] New EH opened, aborting shutdown
+2023-02-10 05:01:43.877 [info] [127.0.0.1][21213f0e][ExtensionHostConnection] The client has reconnected.
+2023-02-10 05:01:47.412 [info] [127.0.0.1][8b97ef6d][ManagementConnection] The client has reconnected.
+2023-02-10 05:01:47.726 [info] [127.0.0.1][21213f0e][ExtensionHostConnection] The client has reconnected.
+2023-02-10 05:07:01.857 [info] [127.0.0.1][8b97ef6d][ManagementConnection] The client has reconnected.
+2023-02-10 05:07:35.115 [info] [127.0.0.1][21213f0e][ExtensionHostConnection] The client has reconnected.
+2023-02-10 05:24:17.762 [info] [127.0.0.1][8b97ef6d][ManagementConnection] The client has reconnected.
+2023-02-10 05:24:49.100 [info] [127.0.0.1][21213f0e][ExtensionHostConnection] The client has reconnected.
+2023-02-10 05:42:32.702 [info] [127.0.0.1][8b97ef6d][ManagementConnection] The client has reconnected.
+2023-02-10 05:43:05.737 [info] [127.0.0.1][21213f0e][ExtensionHostConnection] The client has reconnected.
+2023-02-10 06:01:24.589 [info] [127.0.0.1][8b97ef6d][ManagementConnection] The client has reconnected.
+2023-02-10 06:01:56.979 [info] [127.0.0.1][21213f0e][ExtensionHostConnection] The client has reconnected.
+2023-02-10 06:04:31.929 [info] [127.0.0.1][8b97ef6d][ManagementConnection] The client has reconnected.
+2023-02-10 06:05:01.207 [info] [127.0.0.1][21213f0e][ExtensionHostConnection] The client has reconnected.
+2023-02-10 06:25:52.866 [info] [127.0.0.1][21213f0e][ExtensionHostConnection] The client has reconnected.
+2023-02-10 06:25:56.490 [info] [127.0.0.1][8b97ef6d][ManagementConnection] The client has reconnected.
+2023-02-10 06:25:57.035 [info] [127.0.0.1][21213f0e][ExtensionHostConnection] The client has reconnected.
+2023-02-10 06:57:13.925 [info] [127.0.0.1][21213f0e][ExtensionHostConnection] The client has reconnected.
+2023-02-10 06:57:17.495 [info] [127.0.0.1][8b97ef6d][ManagementConnection] The client has reconnected.
+2023-02-10 06:57:17.884 [info] [127.0.0.1][21213f0e][ExtensionHostConnection] The client has reconnected.
+2023-02-10 07:10:34.328 [info] [127.0.0.1][8b97ef6d][ManagementConnection] The client has reconnected.
+2023-02-10 07:10:37.823 [info] [127.0.0.1][21213f0e][ExtensionHostConnection] The client has reconnected.
+2023-02-10 08:11:23.042 [info] [127.0.0.1][8b97ef6d][ManagementConnection] The client has reconnected.
+2023-02-10 08:11:23.504 [info] [127.0.0.1][21213f0e][ExtensionHostConnection] The client has reconnected.
+2023-02-10 08:18:39.186 [info] [127.0.0.1][8b97ef6d][ManagementConnection] The client has reconnected.
+2023-02-10 08:18:42.740 [info] [127.0.0.1][21213f0e][ExtensionHostConnection] The client has reconnected.
+2023-02-10 08:25:40.267 [info] Getting Manifest... mgmcdermott.vscode-language-babel
+2023-02-10 08:25:40.498 [info] Installing extension: mgmcdermott.vscode-language-babel
+2023-02-10 08:25:41.167 [info] Extracted extension to /users/hy/.vscode-server/extensions/.fa608651-ed50-44f2-8300-da52147c23c2: mgmcdermott.vscode-language-babel
+2023-02-10 08:25:41.259 [info] Renamed to /users/hy/.vscode-server/extensions/mgmcdermott.vscode-language-babel-0.0.36
+2023-02-10 08:25:41.263 [info] Extracting completed. mgmcdermott.vscode-language-babel
+2023-02-10 08:25:41.293 [info] Extension installed successfully: mgmcdermott.vscode-language-babel
+2023-02-10 09:05:42.979 [info] [127.0.0.1][8b97ef6d][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2023-02-10 09:05:43.042 [info] [127.0.0.1][21213f0e][ExtensionHostConnection] <1848738> Extension Host Process exited with code: 0, signal: null.
+2023-02-10 09:05:43.042 [info] Last EH closed, waiting before shutting down
+2023-02-10 09:10:43.044 [info] Last EH closed, shutting down

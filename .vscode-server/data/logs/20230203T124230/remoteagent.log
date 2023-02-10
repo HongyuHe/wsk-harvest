@@ -1,0 +1,20 @@
+2023-02-03 12:42:30.153 [info] Extension host agent started.
+2023-02-03 12:42:30.195 [info] Started initializing default profile extensions in extensions installation folder. file:///users/hy/.vscode-server/extensions
+2023-02-03 12:42:30.704 [info] [127.0.0.1][a2847ef4][ManagementConnection] New connection established.
+2023-02-03 12:42:31.004 [info] [127.0.0.1][25f127d9][ExtensionHostConnection] New connection established.
+2023-02-03 12:42:31.011 [info] [127.0.0.1][25f127d9][ExtensionHostConnection] <33774> Launched Extension Host Process.
+2023-02-03 12:42:32.210 [info] Completed initializing default profile extensions in extensions installation folder. file:///users/hy/.vscode-server/extensions
+2023-02-03 12:42:36.763 [info] [127.0.0.1][a2847ef4][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2023-02-03 12:42:36.788 [info] [127.0.0.1][25f127d9][ExtensionHostConnection] <33774> Extension Host Process exited with code: 0, signal: null.
+2023-02-03 12:42:36.789 [info] Last EH closed, waiting before shutting down
+2023-02-03 12:42:40.550 [info] Got delay-shutdown request while in shutdown timeout, delaying
+2023-02-03 12:42:40.550 [info] Cancelling previous shutdown timeout
+2023-02-03 12:42:41.193 [info] [127.0.0.1][22987c57][ManagementConnection] New connection established.
+2023-02-03 12:42:41.546 [info] [127.0.0.1][04ffe033][ExtensionHostConnection] New connection established.
+2023-02-03 12:42:41.556 [info] [127.0.0.1][04ffe033][ExtensionHostConnection] <33894> Launched Extension Host Process.
+2023-02-03 12:47:40.552 [info] New EH opened, aborting shutdown
+2023-02-03 13:36:04.387 [error] [File Watcher (universal)] restarting watcher after error: terminated by itself with code null, signal: SIGSEGV
+2023-02-03 15:45:00.145 [info] [127.0.0.1][04ffe033][ExtensionHostConnection] The client has reconnected.
+2023-02-03 19:02:28.471 [info] [127.0.0.1][04ffe033][ExtensionHostConnection] <33894> Extension Host Process exited with code: 0, signal: null.
+2023-02-03 19:02:28.472 [info] Last EH closed, waiting before shutting down
+2023-02-03 19:07:28.473 [info] Last EH closed, shutting down

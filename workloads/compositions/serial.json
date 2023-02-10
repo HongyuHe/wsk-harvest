@@ -1,128 +1,86 @@
 {
     "composition": {
-        "type": "let",
-        "declarations": {
-            "params": null
-        },
+        "type": "sequence",
         "components": [
             {
-                "type": "finally",
-                "body": {
-                    "type": "function",
-                    "function": {
-                        "exec": {
-                            "kind": "nodejs:default",
-                            "code": "args => { params = args }"
-                        }
-                    }
-                },
-                "finalizer": {
-                    "type": "sequence",
-                    "components": [
-                        {
-                            "type": "while_nosave",
-                            "test": {
-                                "type": "mask",
-                                "components": [
-                                    {
-                                        "type": "action",
-                                        "name": "/_/check-depth",
-                                        "path": ".test"
-                                    }
-                                ]
-                            },
-                            "body": {
-                                "type": "finally",
-                                "body": {
-                                    "type": "function",
-                                    "function": {
-                                        "exec": {
-                                            "kind": "nodejs:default",
-                                            "code": "() => params"
-                                        }
-                                    }
-                                },
-                                "finalizer": {
-                                    "type": "sequence",
-                                    "components": [
-                                        {
-                                            "type": "mask",
-                                            "components": [
-                                                {
-                                                    "type": "action",
-                                                    "name": "/_/serial-loop",
-                                                    "path": ".body"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "type": "function",
-                                            "function": {
-                                                "exec": {
-                                                    "kind": "nodejs:default",
-                                                    "code": "args => { params = args }"
-                                                }
-                                            }
-                                        }
-                                    ]
-                                }
-                            }
-                        },
-                        {
-                            "type": "function",
-                            "function": {
-                                "exec": {
-                                    "kind": "nodejs:default",
-                                    "code": "() => params"
-                                }
-                            }
-                        }
-                    ]
-                }
+                "type": "action",
+                "name": "/_/seq1",
+                "path": "[0]"
+            },
+            {
+                "type": "action",
+                "name": "/_/seq2",
+                "path": "[1]"
+            },
+            {
+                "type": "action",
+                "name": "/_/seq3",
+                "path": "[2]"
             }
         ],
         "path": ""
     },
     "ast": {
-        "type": "while",
-        "test": {
-            "type": "action",
-            "name": "/_/check-depth",
-            "action": {
-                "exec": {
-                    "kind": "nodejs:default",
-                    "code": "const main = function(params) {\n            let depth = parseInt(params.depth)\n            return {value: depth > 0, depth: depth}\n        }"
+        "type": "seq",
+        "components": [
+            {
+                "type": "action",
+                "name": "/_/seq1",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function () {\n            return { msg: 'seq1 invoked' }\n        }"
+                    }
+                }
+            },
+            {
+                "type": "action",
+                "name": "/_/seq2",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function () {\n            return { msg: 'seq2 invoked' }\n        }"
+                    }
+                }
+            },
+            {
+                "type": "action",
+                "name": "/_/seq3",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function () {\n            return { msg: 'seq3 invoked' }\n        }"
+                    }
                 }
             }
-        },
-        "body": {
-            "type": "action",
-            "name": "/_/serial-loop",
-            "action": {
-                "exec": {
-                    "kind": "nodejs:default",
-                    "code": "const main = function(params) {\n            return {depth: --params.depth}\n        }"
-                }
-            }
-        }
+        ]
     },
     "version": "0.12.0",
     "actions": [
         {
-            "name": "/_/check-depth",
+            "name": "/_/seq1",
             "action": {
                 "exec": {
                     "kind": "nodejs:default",
-                    "code": "const main = function(params) {\n            let depth = parseInt(params.depth)\n            return {value: depth > 0, depth: depth}\n        }"
+                    "code": "const main = function () {\n            return { msg: 'seq1 invoked' }\n        }"
                 }
             }
         },
         {
-            "name": "/_/serial-loop",
+            "name": "/_/seq2",
             "action": {
                 "exec": {
                     "kind": "nodejs:default",
-                    "code": "const main = function(params) {\n            return {depth: --params.depth}\n        }"
+                    "code": "const main = function () {\n            return { msg: 'seq2 invoked' }\n        }"
+                }
+            }
+        },
+        {
+            "name": "/_/seq3",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function () {\n            return { msg: 'seq3 invoked' }\n        }"
                 }
             }
         }
