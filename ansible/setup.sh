@@ -4,6 +4,8 @@ ENV=$1
 
 (cd tools/ubuntu-setup && ./all.sh)
 
+sudo npm install -g openwhisk-composer
+
 # Just to be sure
 sudo chmod 666 /var/run/docker.sock
 

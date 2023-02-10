@@ -1,0 +1,84 @@
+{
+    "composition": {
+        "type": "if_nosave",
+        "test": {
+            "type": "action",
+            "name": "/_/authenticate",
+            "path": ".test"
+        },
+        "consequent": {
+            "type": "action",
+            "name": "/_/success",
+            "path": ".consequent"
+        },
+        "alternate": {
+            "type": "action",
+            "name": "/_/failure",
+            "path": ".alternate"
+        },
+        "path": ""
+    },
+    "ast": {
+        "type": "if_nosave",
+        "test": {
+            "type": "action",
+            "name": "/_/authenticate",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function ({ password }) {\n            console.log(password)\n            let pswd = parseInt(password)\n            return { value: pswd == 123, name: 'authfunc', password: pswd } \n        }"
+                }
+            }
+        },
+        "consequent": {
+            "type": "action",
+            "name": "/_/success",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function (params) { \n            return { message: 'success from ' +  params.name + ' with password: ' + params.password} \n        }"
+                }
+            }
+        },
+        "alternate": {
+            "type": "action",
+            "name": "/_/failure",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function (params) { \n                return { message: 'failure with password:' + params.password } \n                // return { message: 'failure' } \n        }"
+                }
+            }
+        }
+    },
+    "version": "0.12.0",
+    "actions": [
+        {
+            "name": "/_/authenticate",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function ({ password }) {\n            console.log(password)\n            let pswd = parseInt(password)\n            return { value: pswd == 123, name: 'authfunc', password: pswd } \n        }"
+                }
+            }
+        },
+        {
+            "name": "/_/success",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function (params) { \n            return { message: 'success from ' +  params.name + ' with password: ' + params.password} \n        }"
+                }
+            }
+        },
+        {
+            "name": "/_/failure",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function (params) { \n                return { message: 'failure with password:' + params.password } \n                // return { message: 'failure' } \n        }"
+                }
+            }
+        }
+    ]
+}

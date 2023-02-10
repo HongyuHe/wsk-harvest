@@ -1,0 +1,130 @@
+{
+    "composition": {
+        "type": "let",
+        "declarations": {
+            "params": null
+        },
+        "components": [
+            {
+                "type": "finally",
+                "body": {
+                    "type": "function",
+                    "function": {
+                        "exec": {
+                            "kind": "nodejs:default",
+                            "code": "args => { params = args }"
+                        }
+                    }
+                },
+                "finalizer": {
+                    "type": "sequence",
+                    "components": [
+                        {
+                            "type": "while_nosave",
+                            "test": {
+                                "type": "mask",
+                                "components": [
+                                    {
+                                        "type": "action",
+                                        "name": "/_/check-depth",
+                                        "path": ".test"
+                                    }
+                                ]
+                            },
+                            "body": {
+                                "type": "finally",
+                                "body": {
+                                    "type": "function",
+                                    "function": {
+                                        "exec": {
+                                            "kind": "nodejs:default",
+                                            "code": "() => params"
+                                        }
+                                    }
+                                },
+                                "finalizer": {
+                                    "type": "sequence",
+                                    "components": [
+                                        {
+                                            "type": "mask",
+                                            "components": [
+                                                {
+                                                    "type": "action",
+                                                    "name": "/_/serial-loop",
+                                                    "path": ".body"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "function",
+                                            "function": {
+                                                "exec": {
+                                                    "kind": "nodejs:default",
+                                                    "code": "args => { params = args }"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "type": "function",
+                            "function": {
+                                "exec": {
+                                    "kind": "nodejs:default",
+                                    "code": "() => params"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        ],
+        "path": ""
+    },
+    "ast": {
+        "type": "while",
+        "test": {
+            "type": "action",
+            "name": "/_/check-depth",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function(params) {\n            let depth = parseInt(params.depth)\n            return {value: depth > 0, depth: depth}\n        }"
+                }
+            }
+        },
+        "body": {
+            "type": "action",
+            "name": "/_/serial-loop",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function(params) {\n            return {depth: --params.depth}\n        }"
+                }
+            }
+        }
+    },
+    "version": "0.12.0",
+    "actions": [
+        {
+            "name": "/_/check-depth",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function(params) {\n            let depth = parseInt(params.depth)\n            return {value: depth > 0, depth: depth}\n        }"
+                }
+            }
+        },
+        {
+            "name": "/_/serial-loop",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function(params) {\n            return {depth: --params.depth}\n        }"
+                }
+            }
+        }
+    ]
+}
