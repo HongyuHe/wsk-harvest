@@ -1,0 +1,10 @@
+{
+    "$composer": {
+        "openwhisk": {
+            "ignore_certs": true
+        },
+        "redis": {
+            "uri": "redis://<ip.of.vm.with.redis.installed>:6379"
+        }
+    }
+  }

@@ -1,52 +1,27 @@
 {
     "composition": {
-        "type": "let",
-        "declarations": {
-            "$composer": {
-                "redis": {
-                    "uri": "redis://redis:6379"
-                }
-            }
-        },
+        "type": "parallel",
         "components": [
             {
-                "type": "parallel",
-                "components": [
-                    {
-                        "type": "action",
-                        "name": "/_/par1",
-                        "path": "[0][0]"
-                    }
-                ],
+                "type": "action",
+                "name": "/_/par1",
                 "path": "[0]"
             }
         ],
         "path": ""
     },
     "ast": {
-        "type": "let",
-        "declarations": {
-            "$composer": {
-                "redis": {
-                    "uri": "redis://redis:6379"
-                }
-            }
-        },
+        "type": "parallel",
         "components": [
             {
-                "type": "parallel",
-                "components": [
-                    {
-                        "type": "action",
-                        "name": "/_/par1",
-                        "action": {
-                            "exec": {
-                                "kind": "nodejs:default",
-                                "code": "const main = function (params) {\n                console.log($composer)\n                return { msg: 'par1 invoked' }\n            }"
-                            }
-                        }
+                "type": "action",
+                "name": "/_/par1",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function (params) {\n            console.log(params)\n            return { msg: 'par1 invoked' }\n        }"
                     }
-                ]
+                }
             }
         ]
     },
@@ -57,7 +32,7 @@
             "action": {
                 "exec": {
                     "kind": "nodejs:default",
-                    "code": "const main = function (params) {\n                console.log($composer)\n                return { msg: 'par1 invoked' }\n            }"
+                    "code": "const main = function (params) {\n            console.log(params)\n            return { msg: 'par1 invoked' }\n        }"
                 }
             }
         }
