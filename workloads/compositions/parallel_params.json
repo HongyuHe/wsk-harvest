@@ -4,7 +4,7 @@
             "ignore_certs": true
         },
         "redis": {
-            "uri": "redis://<ip.of.vm.with.redis.installed>:6379"
+            "uri": "redis://10.0.1.1:6379"
         }
     }
   }
