@@ -20,7 +20,7 @@
                 "image": {
                     "prefix": "openwhisk",
                     "name": "action-nodejs-v14",
-                    "tag": "nightly"
+                    "tag": "7f7c181"
                 },
                 "deprecated": false,
                 "attached": {
