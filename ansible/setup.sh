@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+if [[ $# -ne 1 ]]; then
+    echo "No environment name specified!" >&2
+    exit 2
+fi
+
+
 ENV=$1
 
 (cd tools/ubuntu-setup && ./all.sh)
@@ -7,7 +13,7 @@ ENV=$1
 sudo npm install -g openwhisk-composer
 
 # * Just to be sure
-sudo chmod 666 /var/run/docker.sock
+sudo chmod 666 /qvar/run/docker.sock
 
 
 # * Pull up the default python for ansible to work properly
@@ -44,7 +50,6 @@ cd ..
 ./bin/wsk property set --apihost 172.17.0.1 --auth 23bc46b1-71f6-4ed5-8c54-816aa4f8c502:123zO3xZCLrMN6v2BKK1dXYFpXlPkccOFqm12CdAsMgRU4VrNZ9lyGVCGuMDGIwP
 ./bin/wsk -i action invoke /whisk.system/utils/echo -p message hello --result
 
-npm install -g openwhisk-composer
 sudo cp bin/wsk /usr/bin/wsk
 
 
