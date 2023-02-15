@@ -45,7 +45,7 @@ export KUBECONFIG="$(kind get kubeconfig-path)"
 kubectl config set-context --current --namespace=default
 
 # This is required because it is timed out to pull the image during the test.
-docker pull openwhisk/action-nodejs-v14:nightly
+docker pull openwhisk/action-nodejs-v14:7f7c181
 docker pull openwhisk/dockerskeleton:nightly
 docker pull openwhisk/example:nightly
 docker pull openwhisk/apigateway:0.11.0

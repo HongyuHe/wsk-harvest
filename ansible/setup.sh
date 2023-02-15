@@ -6,14 +6,14 @@ ENV=$1
 
 sudo npm install -g openwhisk-composer
 
-# Just to be sure
+# * Just to be sure
 sudo chmod 666 /var/run/docker.sock
 
 
-# Pull up the default python for ansible to work properly
+# * Pull up the default python for ansible to work properly
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.8 2
 
-# Build
+# * Build
 ./gradlew distDocker
 
 cd ansible || exit
@@ -27,7 +27,7 @@ export ENVIRONMENT=$ENV
 export OW_DB_HOST=10.0.1.1
 #export OW_DB_PORT=8091
 
-# Run couchdb as a container.
+# * Run couchdb as a container.
 ansible-playbook -i environments/"$ENVIRONMENT" setup.yml
 ansible-playbook -i environments/"$ENVIRONMENT" prereq.yml
 
@@ -44,6 +44,8 @@ cd ..
 ./bin/wsk property set --apihost 172.17.0.1 --auth 23bc46b1-71f6-4ed5-8c54-816aa4f8c502:123zO3xZCLrMN6v2BKK1dXYFpXlPkccOFqm12CdAsMgRU4VrNZ9lyGVCGuMDGIwP
 ./bin/wsk -i action invoke /whisk.system/utils/echo -p message hello --result
 
+npm install -g openwhisk-composer
+sudo cp bin/wsk /usr/bin/wsk
 
 
 ## OR host a couchbase locally.
