@@ -13,7 +13,7 @@ ENV=$1
 sudo npm install -g openwhisk-composer
 
 # * Just to be sure
-sudo chmod 666 /qvar/run/docker.sock
+sudo chmod 666 /var/run/docker.sock
 
 
 # * Pull up the default python for ansible to work properly
