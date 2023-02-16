@@ -22,8 +22,8 @@ set -x
 # Force a (re)install of pip in the correct location
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python3 get-pip.py --force-reinstall
-sudo cp /users/$USER/.local/bin/pip /usr/local/bin/pip
-sudo cp /users/$USER/.local/bin/pip3 /usr/local/bin/pip3
+#sudo cp /users/$USER/.local/bin/pip /usr/local/bin/pip
+#sudo cp /users/$USER/.local/bin/pip3 /usr/local/bin/pip3
 
 pip install markupsafe==2.0.1
 sudo pip install argcomplete
