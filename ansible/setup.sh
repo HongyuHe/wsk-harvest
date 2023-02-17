@@ -8,19 +8,19 @@ fi
 
 ENV=$1
 
-(cd tools/ubuntu-setup && sudo ./all.sh)
+# (cd tools/ubuntu-setup && sudo ./all.sh)
 
-sudo npm install -g openwhisk-composer
+# sudo npm install -g openwhisk-composer
 
-# * Just to be sure
-sudo chmod 666 /var/run/docker.sock
+# # * Just to be sure
+# sudo chmod 666 /var/run/docker.sock
 
 
-# * Pull up the default python for ansible to work properly
-sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.8 2
+# # * Pull up the default python for ansible to work properly
+# sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.8 2
 
-# * Build
-sudo ./gradlew distDocker
+# # * Build
+# sudo ./gradlew distDocker
 
 cd ansible || exit
 export ENVIRONMENT=$ENV
@@ -52,6 +52,10 @@ cd ..
 ./bin/wsk -i action invoke /whisk.system/utils/echo -p message hello --result
 
 sudo cp bin/wsk /usr/bin/wsk
+
+# * Re-deploy redis for parallel DAGs
+docker container rm -f redis
+docker run -d -p 6379:6379 --name redis redis
 
 
 ## OR host a couchbase locally.

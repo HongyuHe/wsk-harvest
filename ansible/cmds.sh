@@ -5,8 +5,15 @@ wsk -i action invoke parallel -P parallel_params.json --result
 
 wsk activation poll -i
 
-ansible all -i environments/cloudlab -m ping
+sudo ansible all -i environments/cloudlab -m ping
 
 # * Get rid off docker 
 sudo apt-get purge -y docker-engine docker docker.io docker-ce docker-ce-cli
 sudo systemctl start docker
+
+
+# * For weird permission error
+sudo chmod 755 ~/.config
+sudo chmod 755 ~/.docker/
+
+sudo ansible-playbook -i environments/"$ENVIRONMENT" teardown.yml

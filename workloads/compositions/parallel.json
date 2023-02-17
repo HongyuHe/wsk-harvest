@@ -6,6 +6,21 @@
                 "type": "action",
                 "name": "/_/par1",
                 "path": "[0]"
+            },
+            {
+                "type": "action",
+                "name": "/_/par2",
+                "path": "[1]"
+            },
+            {
+                "type": "action",
+                "name": "/_/par3",
+                "path": "[2]"
+            },
+            {
+                "type": "action",
+                "name": "/_/par4",
+                "path": "[3]"
             }
         ],
         "path": ""
@@ -22,6 +37,36 @@
                         "code": "const main = function (params) {\n            console.log(params)\n            return { msg: 'par1 invoked' }\n        }"
                     }
                 }
+            },
+            {
+                "type": "action",
+                "name": "/_/par2",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function (params) {\n            console.log(params)\n            return { msg: 'par2 invoked' }\n        }"
+                    }
+                }
+            },
+            {
+                "type": "action",
+                "name": "/_/par3",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function (params) {\n            console.log(params)\n            return { msg: 'par3 invoked' }\n        }"
+                    }
+                }
+            },
+            {
+                "type": "action",
+                "name": "/_/par4",
+                "action": {
+                    "exec": {
+                        "kind": "nodejs:default",
+                        "code": "const main = function (params) {\n            console.log(params)\n            return { msg: 'par4 invoked' }\n        }"
+                    }
+                }
             }
         ]
     },
@@ -33,6 +78,33 @@
                 "exec": {
                     "kind": "nodejs:default",
                     "code": "const main = function (params) {\n            console.log(params)\n            return { msg: 'par1 invoked' }\n        }"
+                }
+            }
+        },
+        {
+            "name": "/_/par2",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function (params) {\n            console.log(params)\n            return { msg: 'par2 invoked' }\n        }"
+                }
+            }
+        },
+        {
+            "name": "/_/par3",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function (params) {\n            console.log(params)\n            return { msg: 'par3 invoked' }\n        }"
+                }
+            }
+        },
+        {
+            "name": "/_/par4",
+            "action": {
+                "exec": {
+                    "kind": "nodejs:default",
+                    "code": "const main = function (params) {\n            console.log(params)\n            return { msg: 'par4 invoked' }\n        }"
                 }
             }
         }

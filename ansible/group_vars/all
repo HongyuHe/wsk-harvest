@@ -338,9 +338,9 @@ apigateway:
   version: nightly
 
 redis:
-  version: 4.0
+  version: latest # 4.0
   port: 6379
-  password: openwhisk
+  # password: openwhisk
 
 linux:
   version: 4.4.0-31
