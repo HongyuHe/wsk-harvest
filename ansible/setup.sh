@@ -8,19 +8,19 @@ fi
 
 ENV=$1
 
-# (cd tools/ubuntu-setup && sudo ./all.sh)
+(cd tools/ubuntu-setup && sudo ./all.sh)
 
-# sudo npm install -g openwhisk-composer
+sudo npm install -g openwhisk-composer
 
-# # * Just to be sure
-# sudo chmod 666 /var/run/docker.sock
+# * Just to be sure
+sudo chmod 666 /var/run/docker.sock
 
 
-# # * Pull up the default python for ansible to work properly
-# sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.8 2
+# * Pull up the default python for ansible to work properly
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.8 2
 
 # # * Build
-# sudo ./gradlew distDocker
+sudo ./gradlew distDocker
 
 cd ansible || exit
 export ENVIRONMENT=$ENV

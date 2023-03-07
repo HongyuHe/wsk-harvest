@@ -17,3 +17,6 @@ sudo chmod 755 ~/.config
 sudo chmod 755 ~/.docker/
 
 sudo ansible-playbook -i environments/"$ENVIRONMENT" teardown.yml
+
+# * Get container IP
+docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <id | name>
